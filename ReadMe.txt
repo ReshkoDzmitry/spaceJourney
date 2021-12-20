@@ -13,5 +13,7 @@ LIFE - the number of lives. Maximum 5.
 Collect hearts, because they not only restore lives, but also give +5 points.
 Bonus - gives +10 points.
 
+Link: https://reshkodzmitry.github.io/spaceJourney/
+
 
 The game is written using Canvas technology.
