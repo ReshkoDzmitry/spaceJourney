@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleMenu.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>SpaceJourney</title>
+</head>
+
+<body>
+  <script src='https://gamespacejorneyv01.dzmitry.repl.co/jquery.js'></script>
+
+  <div id="containerGame" style="display: none;">
+    <div id="wrapper">
+      <div class="flex">
+        <div class="game">
+
+          <canvas id="game" width="1000" height="600" onclick="oneShot()">Элемент не поддерживается</canvas>
+        </div>
+        <p class="points" id="points"></p>
+        <p class="level" id="level"></p>
+        <p class="life" id="life"></p>
+      </div>
+    </div>
+
+    <div id="modalGame" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>GAME OVER</h2>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="name" class="inputName" placeholder="Enter your name">
+          <p id="pointsModal" class="yourPoints"></p>
+          <button class="btn" id="savePlayer" onclick="playerAdd()">Save and close</button>
+        </div>
+      </div>
+
+    </div>
+    <audio src="collision.mp3" autoplay="autoplay"></audio>
+    <audio src="blaster.mp3" autoplay="autoplay"></audio>
+    <audio src="explosion.mp3" autoplay="autoplay"></audio>
+    <audio src="life.mp3" autoplay="autoplay"></audio>
+    <audio src="bonus.mp3" autoplay="autoplay"></audio>
+    <audio src="levelUp.mp3" autoplay="autoplay"></audio>
+  </div>
+
+
+
+  <div class="containerMenu" id="containerMenu">
+    <div class="wrapperMenu">
+      <div class="headerMenu">
+        <h1 class="nameGame">SPACE JORNEY
+          <span>SPACE JORNEY</span>
+        </h1>
+      </div>
+      <div class="menu">
+        <button class="menu-btn" id="start" onclick="startGame(), installGame()">START</button>
+        <button class="menu-btn" id="score" onclick="modalScore()">SCORE</button>
+        <button class="menu-btn" id="exit" onclick="exit()">EXIT</button>
+      </div>
+    </div>
+    <div id="modalScore" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" id="closeModal" onclick="closeModal()">×</span>
+          <h2>SCORE</h2>
+        </div>
+        <div class="modal-body">
+          <div class="layer">
+            <p id="progress"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="scriptGame.js"></script>
+  <script src="scriptMenu.js"></script>
+</body>
+
+</html>

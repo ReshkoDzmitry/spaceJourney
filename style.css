@@ -1,0 +1,151 @@
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+canvas {
+    cursor: none;
+}
+
+#game {
+    background-image: url("fon.png");
+}
+
+.flex {
+    display: flex;
+}
+
+.points {
+    position: absolute;
+    top: 10px;
+    right: 660px;
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.level {
+    position: absolute;
+    top: 10px;
+    right: 450px;
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.life {
+    position: absolute;
+    top: 10px;
+    right: 270px;
+    color: rgba(19, 102, 2, 0.863);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lives {
+    position: absolute;
+    background-image: url('heart.png');
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #E1BEE7;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 525px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(219, 3, 3);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    color: #ffff;
+    padding: 2px 16px;
+    background-color: #121720;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: #98988e;
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.inputName {
+    width: 300px;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.yourPoints {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #ffffffc4;
+    border: none;
+    font-size: 18px;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    color: rgb(255, 97, 47);
+}
