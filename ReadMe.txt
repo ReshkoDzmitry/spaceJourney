@@ -15,5 +15,6 @@ Bonus - gives +10 points.
 
 Link: https://reshkodzmitry.github.io/spaceJourney/
 
-
 The game is written using Canvas technology.
+
+Used HTML, CSS, JS, Canvas.
